@@ -136,15 +136,6 @@ export const ParallaxHero: React.FC<ParallaxHeroProps> = ({
               MEGHALAYA
             </span>
           </div>
-          
-          {/* Tagline floating elegantly between subtle lines */}
-          <div className="mt-4 flex items-center gap-3 opacity-90 select-none">
-            <span className="h-[1px] w-6 bg-brand-lime/30" />
-            <span className="text-[10px] sm:text-xs font-mono tracking-[0.5em] uppercase text-brand-lime font-bold">
-              {tagline || "Where Clouds Kiss the Hills"}
-            </span>
-            <span className="h-[1px] w-6 bg-brand-lime/30" />
-          </div>
         </motion.div>
 
         {/* LAYER 4.5: Drifting Cloud Mist passing IN FRONT of the text but BEHIND the forest (z-18) */}
