@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Dancing+Script:wght@600&family=Mr+De+Haviland&family=Bebas+Neue&family=Permanent+Marker&family=Caveat+Brush&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Sora", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-cursive: "Mr De Haviland", cursive;
+  --font-script: "Dancing Script", cursive;
+  --font-condensed: "Bebas Neue", sans-serif;
+  --font-brush: "Permanent Marker", cursive;
+  --font-caveat: "Caveat Brush", cursive;
+
+  /* Ethereal Highland Theme Colors */
+  --color-brand-cream: #fbf9f2;
+  --color-brand-cream-dim: #dbdad3;
+  --color-brand-cream-dark: #efeee7;
+  --color-brand-lime: #e2f6b5;
+  --color-brand-olive: #546431;
+  --color-brand-jungle: #30c675;
+  --color-brand-charcoal: #1b1c18;
+  --color-brand-charcoal-light: #2b2b2b;
+  --color-brand-gray: #5f5e5e;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-cream);
+  color: var(--color-brand-charcoal);
+  overflow-x: hidden;
+}
+
+/* Custom scroll bar for high-end boutique aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-cream-dim);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-olive);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Atmospheric Micro-Animations */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+@keyframes floatMedium {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-16px) rotate(-1.5deg); }
+}
+
+@keyframes driftCloudSlow {
+  0% { transform: translateX(-10vw); }
+  100% { transform: translateX(110vw); }
+}
+
+@keyframes driftCloudMedium {
+  0% { transform: translateX(-20vw); }
+  100% { transform: translateX(120vw); }
+}
+
+@keyframes driftBirds {
+  0% { transform: translate(-10vw, 15vh) scale(0.85); opacity: 0; }
+  10% { opacity: 0.75; }
+  90% { opacity: 0.75; }
+  100% { transform: translate(110vw, -10vh) scale(1.05); opacity: 0; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.35; filter: drop-shadow(0 0 15px rgba(255, 158, 0, 0.45)); }
+  50% { opacity: 0.55; filter: drop-shadow(0 0 35px rgba(255, 158, 0, 0.75)); }
+}
+
+@keyframes floatPollen {
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.6; }
+  90% { opacity: 0.6; }
+  100% { transform: translate(-300px, -200px) rotate(360deg); opacity: 0; }
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: floatMedium 8s ease-in-out infinite;
+}
+
+.animate-cloud-drift-1 {
+  animation: driftCloudSlow 85s linear infinite;
+}
+
+.animate-cloud-drift-2 {
+  animation: driftCloudMedium 60s linear infinite;
+}
+
+.animate-birds {
+  animation: driftBirds 38s linear infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+.animate-pollen-1 {
+  animation: floatPollen 12s linear infinite;
+}
+
+.animate-pollen-2 {
+  animation: floatPollen 18s linear infinite;
+}
+
+

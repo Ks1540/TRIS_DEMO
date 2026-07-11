@@ -1,0 +1,6 @@
+{
+  "name": "TRIS Meghalaya",
+  "description": "An experiential shopping and boutique travel booking applet for TRIS Meghalaya, celebrating local artisans and nature-inspired journeys.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
