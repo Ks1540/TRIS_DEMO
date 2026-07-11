@@ -244,11 +244,7 @@ export default function Navbar({
             {/* Mobile Menu Toggle Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className={`p-2 rounded-full md:hidden transition-colors ${
-                useTransparent 
-                  ? 'text-white hover:bg-white/10' 
-                  : 'text-brand-gray hover:text-brand-charcoal hover:bg-brand-cream-dark/50'
-              }`}
+              className="p-2 rounded-full md:hidden transition-colors text-white hover:bg-white/10"
               id="btn-mobile-menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -256,7 +252,7 @@ export default function Navbar({
           </div>
         </div>
       </div>
-
+ 
       {/* Mobile Menu Dropdown Panel */}
       <AnimatePresence>
         {mobileMenuOpen && (
@@ -264,9 +260,7 @@ export default function Navbar({
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className={`md:hidden border-b border-brand-cream-dim ${
-              useTransparent ? 'bg-brand-charcoal text-white' : 'bg-brand-cream text-brand-charcoal'
-            }`}
+            className="md:hidden border-b border-white/10 bg-[#09140e]/95 backdrop-blur-2xl text-white"
           >
             <div className="px-4 pt-4 pb-6 space-y-3">
               <button
