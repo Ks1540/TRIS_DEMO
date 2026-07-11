@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/api/tagline", "destination": "/api/tagline" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

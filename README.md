@@ -24,7 +24,7 @@ TRIS is a premium web platform designed to celebrate, plan, and support sustaina
 - Boutique catalog containing hand-made organic products (traditional Khasi *Knup* hats, Lakadong Turmeric, Wild Forest Honey, Bamboo Flutes).
 - Built-in cart drawer, gift wrapping toggles, local wishlist storage, size selectors, and checkout flows.
 
-### 4. Custom Journey Planner & homestay Bookings
+### 4. Custom Journey Planner & Homestay Bookings
 - Live trip planner supporting custom inputs:
   - Multi-day trip date picks
   - SUV vehicle rentals (Toyota Innova, Mahindra Thar, Force Traveler)
@@ -51,13 +51,14 @@ Follow these steps to get the development environment running on your machine:
 Make sure you have [Node.js](https://nodejs.org/) installed (version 18+ recommended).
 
 ### 1. Install Dependencies
-Navigate to the project root directory and install node modules:
+Navigate to the project directory and install node modules:
 ```bash
+cd -TRIS-DEMO-main
 npm install
 ```
 
-### 2. Configure Environment variables
-Create a `.env` or `.env.local` file in the root directory (refer to [.env.example](.env.example)):
+### 2. Configure Environment Variables
+Create a `.env` or `.env.local` file in the project directory:
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
 PORT=3000
